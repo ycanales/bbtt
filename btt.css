@@ -1,0 +1,69 @@
+:root {
+    --cardbg: #e3f6f5;
+    --bg: #fffffe;
+    --main: #fffffe;
+    --buttonbg: #ffd803;
+    --button-text: #272343;
+    --stroke: #272343;
+    --secondary: #e3f6f5;
+    --tertiary: #bae8e8;
+}
+
+html {
+    background: var(--cardbg) !important;
+}
+
+#header {
+    text-align: left !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#main {
+    background: var(--bg);
+    box-shadow: none !important;
+    border: none !important;
+    border-radius: 0 !important;
+}
+
+img {
+    filter: grayscale(1) brightness(0.5);
+}
+
+.btt-header-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.btt-btn-primary {
+    background-color: var(--buttonbg);
+    padding: 12px;
+    color: var(--button-text) !important;
+    font-weight: 700;
+    border-radius: 3px;
+}
+
+.btt-btn-secondary {
+    background-color: var(--tertiary);
+    margin-left: 24px;
+}
+
+.btt-table {
+    border: 3px solid var(--stroke) !important;
+    border-radius: 5px;
+}
+
+.btt-table-header {
+    background: var(--stroke);
+    color: var(--main);
+}
+
+.btt-table-footer {
+    background: var(--stroke);
+    color: var(--main);
+}
+
+.btt-td-description {
+    max-width: 300px;
+}

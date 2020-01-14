@@ -1,0 +1,13 @@
+{
+    "name": "Better BairesDev TimeTracker",
+    "version": "1.0",
+    "description": "Improves the TimeTracker",
+    "manifest_version": 2,
+    "content_scripts": [
+        {
+            "matches": ["https://timetracker.bairesdev.com/*"],
+            "js": ["contentScript.js"],
+            "css": ["btt.css"]
+        }
+    ]
+}
