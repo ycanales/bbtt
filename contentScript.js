@@ -31,7 +31,6 @@ for (const [i, tr] of trs.entries()) {
         tr.style = null
         continue
     }
-    
 
     const date = tr.querySelector(':first-child')
     const hours = tr.querySelector(':nth-child(2)')
@@ -89,7 +88,7 @@ mainEl.removeChild(mainFirstParagraph)
 
 const headerEl = document.querySelector('#header')
 const logoutEl = document.querySelector('a.logout')
-
+logoutEl.style.margin = '0 0 0 12px'
 const usernameEl = document.createElement('div')
 usernameEl.innerHTML = username
 
@@ -110,7 +109,10 @@ headerLeftEl.append(titleEl)
 
 const headerRightEl = document.createElement('div')
 headerRightEl.style.display = 'flex'
+headerRightEl.appendChild(usernameEl)
+headerRightEl.appendChild(logoutEl)
 headerEl.prepend(headerLeftEl)
+headerEl.appendChild(headerRightEl)
 
 // Move date range selector to bottom
 if (page.list) {
