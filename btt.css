@@ -27,9 +27,9 @@ html {
     border-radius: 0 !important;
 }
 
-img {
+/* img {
     filter: grayscale(1) brightness(0.5);
-}
+} */
 
 .btt-header-wrapper {
     display: flex;

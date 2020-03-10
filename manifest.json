@@ -3,6 +3,9 @@
     "version": "1.0",
     "description": "Improves the TimeTracker",
     "manifest_version": 2,
+    "icons": {
+        "128": "bbtt.png"
+    },
     "content_scripts": [
         {
             "matches": ["https://timetracker.bairesdev.com/*"],
